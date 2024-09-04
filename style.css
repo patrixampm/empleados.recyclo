@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;   
+}
+
+html{
+    /* me permite deslizar cuando hago click en los links del menu */
+        scroll-behavior: smooth;
+    }
+
+/* -------------------------------------------- Menu ---------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+.contenedor-header{
+    background: #FFF5EE;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: "Advent Pro", sans-serif;
+    font-size: 36px;
+    color:  #508051;
+    text-decoration: none;
+    font-weight: 800;
+    display: inline-flex;
+    transform: rotate(-2deg);
+}
+.contenedor-header span{
+    display: inline-flex;
+    transform: rotate(178deg);
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 800;
+    font-size: medium;
+}
+.contenedor-header header nav ul li a{
+    text-align: center;
+    color:  #2e8b57;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #6F4E37;
+}
+.nav-responsive{
+    background-color: #6F4E37;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.contenedor-img{
+    width: 300px;
+    height: 200px;
+}
+
+/*---------------------------------------- Sección Inicio --------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------------------- */
+
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgb(30,35,38,1)),
+    url(img/cafeteria_btn_bg.webp);
+    background-size: cover;
+    height: 100vh;
+    color:  #508051;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #FFF5EE;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.inicio .contenido-banner h1{
+    padding-top: 50px;
+    font-size: 32px;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: #508051;
+}
+.inicio .contenido-banner .redes a{
+    color: #2e8b57;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #2e8b57;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1e2326;
+}
+
+/* ---------------------------------------- Sección Horarios --------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+.horarios{
+    background-color: #FFF5EE;
+}
+.horarios .contenido-seccion{
+    text-align: center;
+    width: 100%;
+}
+.horarios .contenido-seccion ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.horarios .day-name {
+    background-color: #2e8b57;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+.horarios .empleados {
+    background-color: burlywood;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFF5EE;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
