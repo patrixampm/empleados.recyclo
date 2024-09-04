@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="Web profesional para los empleados de Recyclobikecafe">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=""/>
+    <title>Empleados.Recyclo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!------------------------------------ SECCIÓN LOGIN ----------------------------------------------------------->
+
+    <!------------------------------------ SECCIÓN ENCABEZADO -------------------------------------------------->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">R<span>E</span>CYCLO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#horarios" onclick="seleccionar()">HORARIOS</a></li>
+                    <li><a href="#registro" onclick="seleccionar()">REGISTRO DE HORAS</a></li>
+                    <li><a href="#tareas" onclick="seleccionar()">TAREAS</a></li>
+                    <li><a href="#vacaciones" onclick="seleccionar()">VACACIONES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CHIVATEO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!------------------- SECCIÓN INICIO ------------------------------------------------------------------------------->
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Recyclo_logo110.webp" alt="imagen logo recyclo">
+            </div>
+            <h1>EMPLEADOS</h1>
+            <div class="redes">
+                <a href="https://www.facebook.com/recyclobikecafe" aria-label="Facebook de Recyclobikecafe"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/recyclobikecafeandshop/" aria-label="Instagram de Recyclobikecafe"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+     </section>
+
+
+    <!---------------------------- SECCIÓN HORARIOS ---------------------------------------------------->
+
+     <section id="horarios" class="horarios">
+        <div class="contenido-seccion">
+            <h1>Horario de Trabajo</h1>
+            <table id="horario">
+                <thead>
+                    <tr>
+                        <th>Empleado</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se cargarán los datos -->
+                </tbody>
+            </table>
+        
+            </div>
+
+     </section>
+
+    <!-- SECCIÓN REGISTRO DE HORAS -->
+
+    <!-- SECCIÓN GESTIÓN DE TAREAS -->
+
+    <!-- CALENADRIO DE VACACIONES -->
+
+
+   <!-- https://docs.google.com/spreadsheets/d/1tBKgGvrnEK12qCx-ccchn8o399a67DjrUit5H0N-5Cc/pubhtml -->
+
+    <!--<p>Autenticación API Sheets API</p>-->
+
+    <!--Autenticación-->
+    <!--<button id="authorize_button" onclick="handleAuthClick()">Authorize</button>-->
+    <!--<button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>-->
+    <!--<script async defer src="https://apis.google.com/js/api.js" id="gapi"></script>-->
+    <!--<script async defer src="https://accounts.google.com/gsi/client" id="gis"></script>-->
+   <script src="script.js"></script>
+    <!--<script async defer src="sheets.js"></script>-->
+    
+</body>
+</html>
