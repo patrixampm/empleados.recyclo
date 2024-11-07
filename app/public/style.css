@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@800&display=swap');
+
+html{
+    --s: 150px; /* control the size*/
+    --c1: #f2d7b4;
+    --c2: #b4e468;
+    
+    --_g: 
+       var(--c1) 0%  5% ,var(--c2) 6%  15%,var(--c1) 16% 25%,var(--c2) 26% 35%,var(--c1) 36% 45%,
+       var(--c2) 46% 55%,var(--c1) 56% 65%,var(--c2) 66% 75%,var(--c1) 76% 85%,var(--c2) 86% 95%,
+       #0000 96%;
+    background:
+      radial-gradient(50% 50% at 100% 0,var(--_g)),
+      radial-gradient(50% 50% at 0 100%,var(--_g)),
+      radial-gradient(50% 50%,var(--_g)),
+      radial-gradient(50% 50%,var(--_g)) calc(var(--s)/2) calc(var(--s)/2)
+      var(--c1);
+    background-size: var(--s) var(--s);
+}
+
+body{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    font-family: 'work Sans';
+    color: rgb(73, 81, 86);
+    font-size: larger;
+}
+
+.form-container{
+    width: 500px;
+    background-color: #f0d9bc;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button{
+    background-color: #a5e342;
+    font-weight: bold;
+    color: rgb(73, 81, 86);
+    cursor: pointer;
+}
+
+.error{
+    color: rgb(218, 98, 98);
+}
+
+.escondido{
+    display: none;
+}
+
+.sr-only{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+input, button{
+    border-radius: 4px;
+    border: unset;
+    padding: 15px 30px;
+}
